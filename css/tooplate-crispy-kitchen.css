@@ -7,7 +7,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 */
 
 /*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
+  CUSTOM PROPERTIES ( VARIABLES )
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
@@ -47,7 +47,7 @@ body {
 }
 
 /*---------------------------------------
-  TYPOGRAPHY               
+  TYPOGRAPHY
 -----------------------------------------*/
 
 h2,
@@ -146,7 +146,7 @@ strong {
 }
 
 /*---------------------------------------
-  CUSTOM BUTTON              
+  CUSTOM BUTTON
 -----------------------------------------*/
 .custom-btn {
   border: 0;
@@ -156,7 +156,7 @@ strong {
 }
 
 /*---------------------------------------
-  NAVIGATION              
+  NAVIGATION
 -----------------------------------------*/
 .navbar {
   background: var(--white-color);
@@ -263,7 +263,7 @@ strong {
 }
 
 /*---------------------------------------
-  SITE HEADER              
+  SITE HEADER
 -----------------------------------------*/
 .site-header {
   background-repeat: no-repeat;
@@ -288,19 +288,19 @@ strong {
 }
 
 .site-about-header {
-  background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg');
+  background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.webp');
 }
 
 .site-menu-header {
-  background-image: url('../images/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg');
+  background-image: url('../images/header/luisa-brimble-aFzg83dvnAI-unsplash.webp');
 }
 
 .site-news-header {
-  background-image: url('../images/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg');
+  background-image: url('../images/header/priscilla-du-preez-W3SEyZODn8U-unsplash.webp');
 }
 
 .site-contact-header {
-  background-image: url('../images/header/rod-long-I79Pgmhmy5M-unsplash.jpg');
+  background-image: url('../images/header/rod-long-I79Pgmhmy5M-unsplash.webp');
 }
 
 .overlay {
@@ -313,7 +313,7 @@ strong {
 }
 
 /*---------------------------------------
-  HERO              
+  HERO
 -----------------------------------------*/
 .hero {
   position: relative;
@@ -345,7 +345,7 @@ strong {
 }
 
 /*---------------------------------------
-  HERO SLIDE               
+  HERO SLIDE
 -----------------------------------------*/
 .carousel-image {
   width: 100%;
@@ -446,7 +446,7 @@ strong {
 }
 
 /*---------------------------------------
-  MENU               
+  MENU
 -----------------------------------------*/
 .menu,
 .about,
@@ -491,7 +491,7 @@ strong {
 }
 
 /*---------------------------------------
-  NEWS               
+  NEWS
 -----------------------------------------*/
 .news-thumb {
   position: relative;
@@ -590,7 +590,7 @@ strong {
 }
 
 /*---------------------------------------
-  CUSTOM FORM            
+  CUSTOM FORM
 -----------------------------------------*/
 .custom-form .form-control {
   margin-bottom: 20px;
@@ -610,7 +610,7 @@ strong {
 }
 
 /*---------------------------------------
-  SUBSCRIBE FORM            
+  SUBSCRIBE FORM
 -----------------------------------------*/
 .subscribe-form .form-control {
   margin-top: 20px;
@@ -618,7 +618,7 @@ strong {
 }
 
 /*---------------------------------------
-  BOOKING FORM            
+  BOOKING FORM
 -----------------------------------------*/
 #BookingModal .modal-content {
   border: 0;
@@ -628,7 +628,7 @@ strong {
 #BookingModal .modal-content::before {
   content: '';
   background-color: var(--white-color);
-  background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg');
+  background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash.webp');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -677,7 +677,7 @@ strong {
 }
 
 .BgImage {
-  background-image: url('../images/alex-haney-CAhjZmVk5H4-unsplash.jpg');
+  background-image: url('../images/alex-haney-CAhjZmVk5H4-unsplash.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -685,10 +685,10 @@ strong {
 }
 
 /*---------------------------------------
-  FOOTER              
+  FOOTER
 -----------------------------------------*/
 .site-footer {
-  background-image: url('../images/daan-evers-tKN1WXrzQ3s-unsplash.jpg');
+  background-image: url('../images/daan-evers-tKN1WXrzQ3s-unsplash.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -739,7 +739,7 @@ strong {
 }
 
 /*---------------------------------------
-  SOCIAL ICON               
+  SOCIAL ICON
 -----------------------------------------*/
 .social-icon {
   margin: 0;
@@ -772,7 +772,7 @@ strong {
 }
 
 /*---------------------------------------
-  RESPONSIVE STYLES               
+  RESPONSIVE STYLES
 -----------------------------------------*/
 @media screen and (max-width: 1180px) {
   h1 {
@@ -832,7 +832,7 @@ strong {
   }
 
   #BookingModal .modal-content::before {
-    background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash-mobile.jpg');
+    background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash-mobile.webp');
     background-position: bottom;
     top: auto;
     left: 0;
