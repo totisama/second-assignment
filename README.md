@@ -2,9 +2,12 @@
 
 ## Optimizations
 
+- Add Vite
+- Add bundle visualizer
 - Add lazy and eager to images
-- Remove unnecessary CSS
 - Optimize images using webp instead of png or jpp
+- Optimize Video
+- Remove unnecessary CSS
 - Resize images and set default size
 - Deploy to Netlify
 
