@@ -3,4 +3,4 @@ setTimeout(function () {
   document.getElementById('closeButton').addEventListener('click', () => {
     document.getElementById('notification').style.display = 'none'
   })
-}, 3000)
+}, 15000)
