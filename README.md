@@ -16,6 +16,7 @@
 ## PWA Part
 
 - Ask for location and show latitude and longitude
+- Cache some files with a Service Worker
 - Show banner if user offline
   - It disappears when user comes online
 - Show notification after 15 seconds
