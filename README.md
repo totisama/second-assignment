@@ -1,6 +1,6 @@
 # Second Assignment - Rodrigo Samayoa
 
-## Optimizations
+## Optimizations Part
 
 - Add Vite
 - Add bundle visualizer
@@ -11,4 +11,19 @@
 - Resize images and set default size
 - Deploy to Netlify
 
-## [Try it here](https://bucolic-smakager-fab46c.netlify.app)
+### [Try it here](https://bucolic-smakager-fab46c.netlify.app)
+
+## PWA Part
+
+- Ask for location and show latitude and longitude
+- Show banner if user offline
+  - It disappears when user comes online
+- Show notification after 15 seconds
+  - It can be closed
+- Add basic SSL with vite plugin
+
+#### Script for running Google Chrome
+
+```
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/foo --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://localhost:5173
+```
