@@ -26,6 +26,8 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet" />
+
+    <link rel="manifest" href="manifest.json" />
     <!--
 
 Tooplate 2129 Crispy Kitchen
@@ -268,6 +270,41 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
         <div class="overlay"></div>
       </section>
+
+      <div
+        id="notification"
+        style="
+          text-align: center;
+          height: 200px;
+          width: 200px;
+          display: none;
+          background-color: #f9f9f9;
+          position: fixed;
+          top: 250px;
+          right: 0;
+          z-index: 10;
+        "
+      >
+        <button
+          style="
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #dc3545;
+            border: 0;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+          "
+          id="closeButton"
+        >
+          X
+        </button>
+        <p style="font-size: 24px; color: #dc3545; margin-top: 40px">
+          Friday specials available till 14:00!
+        </p>
+      </div>
 
       <section class="menu section-padding">
         <div class="container">
@@ -657,6 +694,45 @@ https://www.tooplate.com/view/2129-crispy-kitchen
       </section>
     </main>
 
+    <div
+      id="locationBanner"
+      style="
+        padding-left: 50px;
+        padding-top: 20px;
+        display: none;
+        height: 100px;
+        width: 100%;
+        background-color: beige;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+      "
+    >
+      <p style="font-size: 32px; color: #dc3545">
+        Hey! We also deliver to <span id="location"></span>
+      </p>
+    </div>
+
+    <div
+      id="userOnline"
+      style="
+        padding-left: 50px;
+        padding-top: 20px;
+        display: none;
+        height: 100px;
+        width: 100%;
+        background-color: #adc3e1;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+      "
+    >
+      <p style="font-size: 32px; color: #dc3545">
+        Seems we are offline; Ordering features may no be available; We'll
+        refresh in a bit!
+      </p>
+    </div>
+
     <footer class="site-footer section-padding">
       <div class="container">
         <div class="row">
@@ -863,5 +939,18 @@ https://www.tooplate.com/view/2129-crispy-kitchen
     <script src="js/jquery.min.js" type="module"></script>
     <script src="js/bootstrap.bundle.min.js" type="module"></script>
     <script src="js/custom.js" type="module"></script>
+    <script src="js/geolocation.js" type="module"></script>
+    <script src="js/userOnline.js" type="module"></script>
+    <script src="js/notification.js" type="module"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          console.log('App is loader')
+          navigator.serviceWorker.register('./js/SW.js').then(() => {
+            console.log('Service Worker registerd')
+          })
+        })
+      }
+    </script>
   </body>
 </html>
