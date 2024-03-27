@@ -5,7 +5,8 @@
 - Create different routes for all pages
 - Create components for nav-bar, footer and modal
 - Use context to open and close modal
-- Use Link and Image component
+- Use Nextjs Link and Image component
+- Send post to 'httpbin' with form data
 - Show Modal on button click
 - Deploy to Vercel
 
