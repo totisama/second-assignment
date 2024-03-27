@@ -5,6 +5,7 @@
 - Add Vite
 - Add bundle visualizer
 - Add lazy and eager to images
+- Send post to 'httpbin'
 - Optimize images using webp instead of png or jpp
 - Optimize Video
 - Remove unnecessary CSS
