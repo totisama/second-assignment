@@ -1,5 +1,7 @@
 'use client'
 
+const URL = process.env.NEXT_PUBLIC_BASE_URL as string
+
 import { ModalContext, ModalContextType } from '@/context/ModalProvider'
 import { useContext, FormEvent } from 'react'
 
@@ -31,7 +33,7 @@ export const Modal = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:3000/api/reserve', {
+      const res = await fetch(`${URL}/api/reserve`, {
         method: 'POST',
         body: JSON.stringify(submitData),
         headers: {
