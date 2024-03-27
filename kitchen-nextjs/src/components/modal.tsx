@@ -1,10 +1,55 @@
 'use client'
 
 import { ModalContext, ModalContextType } from '@/context/ModalProvider'
-import { useContext } from 'react'
+import { useContext, FormEvent } from 'react'
 
 export const Modal = () => {
   const { open } = useContext(ModalContext) as ModalContextType
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+
+    const { name, email, phone, people, date, time, message } =
+      e.target as typeof e.currentTarget & {
+        name: { value: string }
+        email: { value: string }
+        phone: { value: string }
+        people: { value: string }
+        date: { value: string }
+        time: { value: string }
+        message: { value: string }
+      }
+
+    const submitData = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      people: people.value,
+      date: date.value,
+      time: time.value,
+      message: message.value,
+    }
+
+    try {
+      const res = await fetch('http://localhost:3000/api/reserve', {
+        method: 'POST',
+        body: JSON.stringify(submitData),
+        headers: {
+          'content-type': 'application/json',
+        },
+      })
+      const data = await res.json()
+      console.log('data', data)
+
+      if (res.ok) {
+        console.log('Reserve done!')
+      } else {
+        console.log('Sorry! Something is wrong.')
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <>
@@ -23,8 +68,7 @@ export const Modal = () => {
           <form
             className="booking-form row"
             role="form"
-            action="/api/reserve"
-            method="post"
+            onSubmit={handleSubmit}
           >
             <div className="col-lg-6 col-12">
               <label htmlFor="name" className="form-label">
