@@ -1,6 +1,6 @@
 # Practical session #13 - Rodrigo Samayoa
 
-## Was was done?
+## What was done?
 
 - Create different routes for all pages
 - Create components for nav-bar, footer and modal
