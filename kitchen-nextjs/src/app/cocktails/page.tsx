@@ -28,7 +28,6 @@ export default async function CocktailsPage({
 
       <Suspense fallback={<CocktailsSectionSkeleton />}>
         <CocktailsSection cocktail={cocktail} />
-        {/* <CocktailsSectionSkeleton /> */}
       </Suspense>
     </main>
   )
