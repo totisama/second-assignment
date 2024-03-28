@@ -48,6 +48,12 @@ export const NavBar = () => {
             </li>
 
             <li className="nav-item">
+              <Link className="nav-link" href={'/cocktails'}>
+                Cocktails
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link className="nav-link" href="/about">
                 Story
               </Link>
