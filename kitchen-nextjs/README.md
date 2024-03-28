@@ -21,4 +21,7 @@
 - Add Sentry
 - Add custom pages to show 404 and 500 errors
 
+<img width="1512" alt="Screenshot 2024-03-28 at 12 17 17 PM" src="https://github.com/totisama/second-assignment/assets/32148906/c480c787-84b6-4afb-beed-55e9efad5a48">
+
+
 ## [Try it here](https://second-assignment-rho.vercel.app)
